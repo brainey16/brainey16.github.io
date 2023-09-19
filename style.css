@@ -59,4 +59,31 @@ main {
 }
 h2, h3 {
     margin: 0px;
-}
+} 
+
+           /* portfolio styles */
+           .content h1 {
+            color: rgb(255, 248, 248);
+        }
+
+        #portfolio {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #portfolio li {
+            background: #e30a0a;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        #portfolio li:hover {
+            background: #fffcfc;
+        }
+
+        #portfolio a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    
