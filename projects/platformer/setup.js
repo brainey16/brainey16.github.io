@@ -3,7 +3,7 @@ const walkAcceleration = 2.5; // how much is added to the speed each frame
 const gravity = 0.5; // how much is subtracted from speedY each frame
 const friction = 1.5; // how much the player is slowed each frame
 const maxSpeed = 8; // maximum horizontal speed, not vertical
-const playerJumpStrength = 12; // this is subtracted from the speedY each jump
+const playerJumpStrength = 15; // this is subtracted from the speedY each jump
 const projectileSpeed = 8; // the speed of projectiles
 
 /////////////////////////////////////////////////
@@ -11,7 +11,7 @@ const projectileSpeed = 8; // the speed of projectiles
 /////////////////////////////////////////////////
 
 // Base game variables
-const frameRate = 60;
+const frameRate = 120;
 const playerScale = 0.8; //makes the player just a bit smaller. Doesn't affect the hitbox, just the image
 
 // Player variables
@@ -91,10 +91,10 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
+  database: { image: "https://upload.wikimedia.org/wikipedia/commons/6/6f/SpongeBob_eyes.png" },
+  diamond: { image: "https://youtooz.com/cdn/shop/products/sb_nailonheadpatrick_characterai_el_779x1000trim_min-46a6.png?v=1682023304" },
+  grace: { image: "https://i1.sndcdn.com/avatars-1BMb0EoxsnwYJBh7-LNZ2BA-t500x500.jpg" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  steve: { image: "https://www.carlogos.org/car-logos/maserati-logo-2006.png" },
 };
