@@ -31,13 +31,9 @@ var circles = []; // variable to store all circles in one Array
         circles.push(circle);
        }
         // TODO 3 / 7 : Call the drawCircle() function 
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        drawCircle();
-        
-    
+      for ( let i = 0; i < 100; i++){
+        drawCircle()
+      }
 
 
         ////////////////////////////////////////////////////////////
@@ -51,19 +47,17 @@ var circles = []; // variable to store all circles in one Array
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            physikz.updatePosition(circles[0]) 
-            physikz.updatePosition(circles[0]) 
-            physikz.updatePosition(circles[0]) 
-            physikz.updatePosition(circles[0]) 
-            physikz.updatePosition(circles[0]) 
+           for (var i = 0; i < 100; i++){
+            physikz.updatePosition(circles[i])
+           }
 
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition()
-
+            for (var i = 0; i < 100; i++){
+                game.checkCirclePosition(circles[i])
+            }
             // TODO 9 : Iterate over the array
-           
-            
+         
         }
     
         /* 
@@ -79,6 +73,15 @@ var circles = []; // variable to store all circles in one Array
             }
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
+            else if ( circle.x > canvas.height ) {
+                circle.x = 0;
+            }
+            else if ( circle.y > canvas.width ) {
+                circle.y = 0;
+            }
+            else if ( circle.y > canvas.height ) {
+                    circle.y = 0;
+                }
             
 
 
